@@ -1,0 +1,51 @@
+header{
+    top:0;
+    width: 100%;
+    height: 10vh;
+    background-color:#78290f;
+    color: #ffecd1;
+    display:block;
+}
+
+.header-container{
+    display:inline-flex;
+    align-items:center;
+    width:100%;
+    height:100%;
+}
+
+#title{
+    font-family: "Nobile", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size:4em;
+    width:40%;
+    flex: 0% 15% 50%;
+    margin-left:5%;
+}
+.header-nav{
+    width: 60%;
+    height:100%;
+    flex: 0% 85% 50%;
+    align-items:center;
+    justify-content: center;
+}
+.nav-list{
+    display:flex;
+    align-items:center;
+    width:100%;
+    list-style:none;
+    margin-top:3%;
+}
+
+.nav-list li{
+    width:33.33%;
+    align-items:center;
+    text-align:center;
+    color: #ffecd1;
+}
+
+.nav-list a{
+    color: #ffecd1;
+    text-decoration-line: none;
+}

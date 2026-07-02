@@ -1,0 +1,16 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+}
+
+
+body{
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-style: normal;
+  overflow-x: hidden;
+  padding-top:0;
+  top:0;
+}
