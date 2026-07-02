@@ -11,5 +11,9 @@
 ## news section
 * filter according to tags
 
-# contact
+## contact
 * embed form (formbricks?)
+
+## ui
+* mobile nav view
+* sticky header
