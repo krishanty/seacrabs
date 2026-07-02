@@ -29,24 +29,13 @@ const MapComponent = () => {
     const pointToLayer = (feature, latlng) => {
         return L.circleMarker(latlng, geojsonMarkerOptions)
     };
-    
-//     var Stadia_AlidadeSmooth = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.{ext}', {
-// 	minZoom: 0,
-// 	maxZoom: 20,
-// 	attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-// 	ext: 'png'
-// });
+
     return (
     <MapContainer center={position} zoom={10} scrollWheelZoom={true}>
         <TileLayer
         attribution='&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}{r}.png"
         />
-        {/* <Marker position={position}>
-        <Popup>
-            A pretty CSS3 popup. <br /> Easily customizable.
-        </Popup>
-        </Marker> */}
         <GeoJSON 
         key={mapPoints ? "loaded-map" : "empty-map"}
         data={mapPoints} 
