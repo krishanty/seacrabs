@@ -36,8 +36,8 @@
     margin-bottom:0;
 }
 .news-header h2{
-    max-width: 85%;
-    flex-basis: 85%;
+    width: 85%;
+    margin-bottom:0;
 }
 .news-date{
     margin-left:auto;
@@ -75,9 +75,32 @@
 .news-container a{
     color: #78290f;
     text-decoration-line: none;
+    cursor:pointer;
 }
 
 .news-card a:hover{
     color: #ffecd1;
     text-decoration-line: none;
+}
+@media (max-width: 768px){
+    .news-header{
+        flex-direction:column;
+        justify-content: start;
+        width:95%;
+    }
+    .news-date{
+        width:100%;
+    }
+    .news-header h2{
+        width:100%;
+        margin-bottom:0;
+    }
+    .news-date{
+        font-family: "Nobile", sans-serif;
+        font-weight: 400;
+        font-size:0.8em;
+        margin-top:0.5em;
+        margin-bottom:0.5em;
+    }
+
 }
